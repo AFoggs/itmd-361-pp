@@ -29,6 +29,8 @@ remote GitHub repository. Follow the steps below exactly in order to receive ful
    
    My Production Problems repository URL: https://github.com/AFoggs/itmd-361-pp
 
+//Additional comment to verify that the file worked correctly.
+
 4. Next, push your commit to GitHub. `git push origin master` from your command line.
 
 5. Next, and most crucially, you need to add the instructor’s repository as a second remote.
