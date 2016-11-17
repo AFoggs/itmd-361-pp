@@ -3,7 +3,7 @@
   outputs the correct value for x (5).
 */
 
-var x = 5;
+
 
 function double(num) {
   x = num * 2;
@@ -11,6 +11,7 @@ function double(num) {
 }
 
 double(6);
+var x = 5;
 console.log('The value of x is:', x, 'It should be 5.');
 
 /*
@@ -19,3 +20,16 @@ console.log('The value of x is:', x, 'It should be 5.');
   variables nor the double function can be accessed via the
   `window` global object, like `window.x`).
 */
+
+(function() {
+function double(num) {
+  x = num * 2;
+  return x;
+}
+
+double(6);
+
+var x = 5;
+
+console.log('The value of x is:', x, 'It should be 5.');
+})();
